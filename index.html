@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="google-site-verification" content="p0CJt2VFn5IEs2U" />
+    <title>AP Crop Price Information</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🌾 Andhra Pradesh Crop Price System</h1>
+    <p>District-wise crop prices (₹ per kg)</p>
+</header>
+
+<div class="container">
+
+    <div class="form-box">
+        <label>State</label>
+        <input type="text" value="Andhra Pradesh" disabled>
+
+        <label>District</label>
+        <select id="district">
+            <option value="">-- Select District --</option>
+            <option>Anantapur</option>
+            <option>Chittoor</option>
+            <option>East Godavari</option>
+            <option>West Godavari</option>
+            <option>Guntur</option>
+            <option>Kadapa</option>
+            <option>Krishna</option>
+            <option>Kurnool</option>
+            <option>Nellore</option>
+            <option>Prakasam</option>
+            <option>Srikakulam</option>
+            <option>Visakhapatnam</option>
+            <option>Vizianagaram</option>
+        </select>
+
+        <label>Crop</label>
+        <select id="crop">
+            <option value="">-- Select Crop --</option>
+        </select>
+
+        <button onclick="showPrice()">Get Price</button>
+    </div>
+
+    <div class="result-box" id="result">
+        <h2>Price Details</h2>
+        <p>Select district and crop</p>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 AP Crop Price System | Student Project</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+1
